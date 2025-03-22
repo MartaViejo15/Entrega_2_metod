@@ -11,7 +11,8 @@ public class ScannerFromFileWithThrow {
         // main logic here ...
     }
     /* Al declarar el throws FileNotFoundException, lo que hacemos es que la excepción
-    se lance hacia arriba en la pila de llamadas y la maneja el metodo superior.
+    se lance hacia arriba en la pila de llamadas y la maneja el metodo superior,
+    en este caso la Java Virtual Machine (JVM).
      */
 }
 
