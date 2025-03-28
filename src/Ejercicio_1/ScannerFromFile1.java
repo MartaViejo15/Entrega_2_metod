@@ -16,7 +16,8 @@ public class ScannerFromFile1 {
     }
         /* Al usar un try-catch le pedimos que pruebe lo del try y en caso de dar error
         que imprima por pantalla el FileNotFoundException, que es lo que dice el catch,
-        y al añadirle un finally le decimos que siempre imprima el string "Scanner finished"
+        y al añadirle un finally le decimos que siempre imprima el string "Scanner finished",
+        se dé o no la excepción.
          */
 }
 
