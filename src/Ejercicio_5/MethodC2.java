@@ -1,10 +1,18 @@
 package Ejercicio_5;
 
-public class MethodD {
-    public static void main(String[] args) throws XxxException, YyyException {
-        MethodD obj = new MethodD();
-        obj.methodD();}
+import Ejercicio_5.XxxException;
+import Ejercicio_5.YyyException;
 
+public class MethodC2 {
+    public static void main(String[] args) throws XxxException, YyyException {
+        MethodC2 m2 = new MethodC2();
+        m2.methodC();
+    }
+    public void methodC() throws XxxException, YyyException {
+        System.out.println("Enter methodC()");
+        methodD();
+        System.out.println("Exit methodC()");
+    }
     public void methodD() throws XxxException, YyyException { // method's signature
         // method's body
         int value = 10;
@@ -19,5 +27,4 @@ public class MethodD {
         }
         System.out.println("El valor" + value + "es válido");
     }
-
 }
