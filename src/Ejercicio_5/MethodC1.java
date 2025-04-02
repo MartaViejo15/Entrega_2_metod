@@ -10,7 +10,9 @@ public class MethodC1 {
         System.out.println("Enter methodC()");
         try {
             // uses methodD() which declares XxxException & YyyException
-            methodD();
+            methodD(10);
+            methodD(-1);
+            methodD(3);
         } catch (XxxException ex) {
             // Exception handler for XxxException
             System.out.println("XxxException: " + ex.getMessage());
@@ -24,9 +26,8 @@ public class MethodC1 {
         System.out.println("Exit methodC()");
     }
 
-    public void methodD() throws XxxException, YyyException { // method's signature
+    public void methodD(int value) throws XxxException, YyyException { // method's signature
         // method's body
-        int value = 10;
 
         // XxxException occurs
         if (value > 5) {
@@ -38,5 +39,9 @@ public class MethodC1 {
         }
         System.out.println("El valor" + value + "es válido");
     }
+
+    /*
+    No he metido method's body, está igualmente bien haciendo methodD(int value) ?
+     */
 
 }
